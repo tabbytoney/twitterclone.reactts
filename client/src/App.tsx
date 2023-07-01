@@ -19,9 +19,6 @@ function App() {
           <Route path='/home' element={<Home />} />
         </Routes>
       </Router>
-      {/* <div>
-        <Users />
-      </div> */}
     </ApolloProvider>
   );
 }
