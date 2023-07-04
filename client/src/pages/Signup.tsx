@@ -3,6 +3,9 @@ import { gql, useMutation } from '@apollo/client';
 import { ErrorMessage, Field, Form, Formik } from 'formik';
 import * as Yup from 'yup';
 import { useNavigate } from 'react-router';
+import CatSit from '../styles/images/catsit.jpeg';
+import { Link } from 'react-router-dom';
+import '../styles/login.css';
 
 const SIGNUP_MUTATION = gql`
   mutation signup($name: String, $email: String!, $password: String!) {
@@ -48,8 +51,9 @@ export default function Signup() {
   });
 
   return (
-    <div>
-      <h1>Signup</h1>
+    <div className='div'>
+      <img src={CatSit} alt='logo' style={{ width: '75px' }} className='logo' />
+      <h3>Signup</h3>
 
       <Formik
         initialValues={initialValues}
@@ -81,9 +85,15 @@ export default function Signup() {
           />
           <ErrorMessage name='confirmPassword' component={'div'} />
 
-          <button type='submit'>Sign Up</button>
+          <button type='submit' className='login-button'>
+            <span>Sign up</span>
+          </button>
         </Form>
       </Formik>
+      <div className='register'>
+        <h4>Already have an account?</h4>
+        <Link to='/login'>Log in</Link>
+      </div>
     </div>
   );
 }
