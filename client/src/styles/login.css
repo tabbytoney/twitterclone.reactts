@@ -1,4 +1,4 @@
-.div {
+.container {
   background-color: #fff;
   width: 35vw;
   margin: 5em auto;
@@ -44,6 +44,16 @@ h3 {
   padding-bottom: 10px;
   cursor: pointer;
   outline: none;
+  color: #f9d7e2;
+}
+
+.login-button:hover {
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  cursor: pointer;
+  outline: none;
+  color: #635f60;
 }
 
 button,
