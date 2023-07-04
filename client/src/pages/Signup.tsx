@@ -51,7 +51,7 @@ export default function Signup() {
   });
 
   return (
-    <div className='div'>
+    <div className='container'>
       <img src={CatSit} alt='logo' style={{ width: '75px' }} className='logo' />
       <h3>Signup</h3>
 

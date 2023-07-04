@@ -40,7 +40,7 @@ export default function Login() {
   });
 
   return (
-    <div className='div'>
+    <div className='container'>
       <img src={CatSit} alt='logo' style={{ width: '75px' }} className='logo' />
 
       <h3>Log in to Cat Twitter</h3>

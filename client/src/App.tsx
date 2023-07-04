@@ -9,7 +9,7 @@ import {
 } from '@apollo/client';
 import { setContext } from 'apollo-link-context';
 import Users from './components/Users';
-import Home from './components/Home';
+import Landing from './components/Landing';
 import Signup from './pages/Signup';
 import Login from './pages/Login';
 import IsAuthenticated from './components/isAuthenticated';
@@ -37,7 +37,7 @@ function App() {
     <ApolloProvider client={client}>
       <Router>
         <Routes>
-          <Route path='/' element={<Home />} />
+          <Route path='/' element={<Landing />} />
           <Route path='/login' element={<Login />} />
           <Route path='/signup' element={<Signup />} />
           <Route
